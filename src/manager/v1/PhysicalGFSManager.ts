@@ -17,7 +17,7 @@ export class PhysicalGFSManager extends PhysicalFSManager
             dateCreation: resource.dateCreation,
             dateLastModified: resource.dateLastModified,
             properties: resource.properties,
-            customName: resource.customName
+            customName: resource['customName']  //FIXME changed to make is compilable
         };
     }
     unserialize(data : any, obj : SerializedObject) : IResource

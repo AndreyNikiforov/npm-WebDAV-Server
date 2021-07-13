@@ -237,6 +237,7 @@ export class HTTPRequestContext extends RequestContext
         if(this.response)
         {
             this.response.on('error', (e) => {
+                // tslint:disable-next-line:no-console
                 console.error(e);
             });
         }
